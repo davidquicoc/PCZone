@@ -1,0 +1,691 @@
+/*FONTS*/
+/*Montserrat*/
+h1,h2,h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Josefin Sans*/
+p,a {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*Selector Universal*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/*HTML*/
+html{
+    font-size: 62.5%;
+}
+
+/*BODY*/
+body {
+    background: #cacaca;
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+
+/*MAIN*/
+main {
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    /*La misma acción realizan*/
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+
+/*HEADER*/
+#header {
+    z-index: 20;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*Menu Header*/
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background-color: #222222;
+    padding: 20px;
+    border-bottom: 0.2px solid #ffffff;
+}
+
+/*Logo*/
+.logo-header{
+    width: 20%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.logo-header img {
+    max-height: 35px;
+    margin-left: 5px;
+    align-items: center;
+}
+
+.logo-header h2 {
+    margin-left: 10px;
+    font-size: 2.3rem;
+    color: #ffffff;
+    transition: 0.35s;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: justify;
+    font-weight: 700;
+}
+
+.logo-header h2:hover {
+    color: #b23e3e;
+    letter-spacing: 2px;
+}
+
+/*Barra Navegación*/
+.navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 65%;
+}
+
+.navbar-header a {
+    font-size: 1.6rem;
+    padding: 0 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.35s;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.navbar-header a:hover {
+    color: #f2db55;
+}
+
+/*Redes Sociales*/
+.social-menu-header {
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-brands {
+    color: #696969;
+    font-size: 1.9rem;
+    padding: 0 5px;
+    transition: 0.35s;
+}
+
+.fa-brands:hover {
+    color: #ff6c00;
+}
+
+/*Sección Header*/
+.section-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./media/trabahando_5120x2880_xtrafondos.com_edit.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.section-header h3 {
+    font-size: 2.9rem;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.section-header p {
+    font-size: 1.8rem;
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.button-section-header {
+    font-size: 1.6rem;
+    margin: 10px 0;
+    padding: 15px 20px;
+    /**/
+    background-color: #eccf7d;
+    color: #000000;
+    text-transform: uppercase;
+    border: 1px solid #ffffff00;
+    text-decoration: none;
+    transition: 0.35s;
+}
+
+.button-section-header:hover {
+    background-color: #b23e3e83;
+    border: 1.3px solid #ffffff;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/*SECTION*/
+#section {
+    background: #d3ceff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+    align-items: flex-end;
+}
+
+/*Sección Contenedor*/
+.section-container {
+    background: #e4e4e4;
+    margin: 20px 20px 0px 20px;
+    padding: 10px;
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/*Artículo Contenedor*/
+.article-object {
+    background: #0000000e;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+}
+
+.article-object img {
+    max-width: 100%;
+    padding: 2.34px 0;
+}
+
+.article-object h3 {
+    font-size: 1.2rem;
+    color: #b23e3e;
+    padding: 5px 0;
+    font-weight: bolder;
+}
+
+.article-object h2 {
+    font-size: 1.8rem;
+    color: #222222;
+    padding: 7.5px 0;
+}
+
+.article-object p {
+    font-size: 1.45rem;
+    padding: 2.7px 0;
+    text-align: justify;
+}
+
+/*Casilla Navegadora Páginas*/
+.nav-tool {
+    margin: 20px 0 0 0;
+    background-color: hsla(0, 0%, 13%, 0.555);
+    color: #ffffff;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-block {
+    width: calc(100% / 6);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-block a {
+    padding: 5px;
+    margin: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #0000006b;
+    border: 0.2px solid #00000038;
+    color: #949494;
+    transition: 0.25s;
+}
+
+.nav-block a:hover {
+    background: #00000000;
+    border: 0.2px solid #ffffff;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+/*ASIDE*/
+#aside {
+    display: flex;
+    margin: 20px 20px 0px 0px;
+    padding: 5px;
+    width: 25%;
+    background: #ff6c00;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+
+.publicidad {
+    width: 100%;
+    height: calc(100% / 3);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.publicidad img {
+    max-width: 100%;
+}
+
+/*FOOTER*/
+#footer {
+    display: flex;
+    width: 100%;
+    background: #222222;
+    padding: 20px;
+    height: 100px;
+    border-top: 0.2px solid #ffffff;
+}
+
+.pie {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pie p {
+    color: #ffffff;
+    font-size: 1.54rem;
+}
+
+.pie p:last-child {
+    font-size: 1.32rem;
+}
+
+/******************/
+/** VISTA TABLET **/
+/******************/
+
+@media (max-width: 800px) {
+    body {
+        background-color: #b23e3e;
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .menu-header {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 350px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .logo-header {
+        width: 100%;
+        padding: 10px;
+        height: 33.33333333333333%;
+        align-items: center;
+    }
+
+    .logo-header img {
+        max-height: 36px;
+        height: auto;
+        margin: 0;
+    }
+    .logo-header h2 {
+        font-size: 2.9rem;
+        margin-left: 20px;
+    }
+
+    .navbar-header {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5px 0;
+        align-items: center;
+        height: 33.33333333333333%;
+    }
+
+    .navbar-header a {
+        padding: 0;
+    }
+
+    .social-menu-header {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 33.33333333333333%;
+    }
+
+    .fa-brands {
+        padding: 10px;
+        font-size: 2.4rem;
+    }
+
+    .section-header {
+        padding: 40px;
+        height: 500px;
+        width: 100%;
+    }
+
+    .section-header h3 {
+        font-size: 4.7rem;
+        padding: 25px 0;
+    }
+
+    .section-header p {
+        font-size: 2.2rem;
+        padding: 20px 0;
+    }
+
+    .button-section-header {
+        font-size: 2rem;
+        margin: 17px 0;
+        padding: 25px;
+    }
+
+    #section {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0px;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .section-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .article-object {
+        width: 100%;
+    }
+
+    .article-object img {
+        padding: 20px 0;
+    }
+
+    .article-object h3 {
+        font-size: 1.7rem;
+    }
+
+    .article-object h2 {
+        font-size: 2.7rem;
+        padding: 10px 0;
+    }
+
+    .article-object p {
+        font-size: 1.75rem;
+    }
+
+    .nav-tool {
+        width: 100%;
+    }
+
+    #aside {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background: #ff6c00;
+        margin: 20px auto auto auto;
+    }
+
+    .publicidad {
+        width: calc(100% / 3);
+        height: 100%;
+    }
+
+    #footer {
+        width: 100%;
+        height: 120px;
+        padding: 25px;
+    }
+
+    .pie p {
+        font-size: 1.8rem;
+    }
+}
+
+/*****************/
+/** VISTA MOVIL **/
+/*****************/
+
+@media (max-width: 373px) {
+    .menu-header {
+        height: 285.5px;
+    }
+    
+    .logo-header img {
+        max-height: 37.4px;
+    }
+
+    .logo-header h2 {
+        display: none;
+    }
+
+    .navbar-header {
+        flex-direction: column;
+    }
+
+    .navbar-header a {
+        font-size: 1.3rem;
+    }
+
+    .social-menu-header {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .fa-brands {
+        font-size: 1.73rem;
+    } 
+
+    .section-header {
+        padding: 50px;
+        height: 360px;
+    }
+
+    .section-header h3 {
+        font-size: 2rem;
+    }
+
+    .section-header p {
+        font-size: 1.2rem;
+    }
+
+    .button-section-header {
+        font-size: 1.4rem;
+        padding: 15px;
+    }
+
+    #section {
+        padding: 0;
+    }
+
+    .article-object img {
+        padding: 8px 0;
+    }
+
+    .article-object h3 {
+        padding: 3.2px 0;
+        font-size: 1.32rem;
+    }
+
+    .article-object h2 {
+        font-size: 1.64rem;
+        padding: 4px 0;
+    }
+
+    .article-object p {
+        font-size: 1.2rem;
+    }
+
+    .nav-tool {
+        margin: 0px;
+        width: 100%;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        height: 150px;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    .nav-block {
+        width: calc(100% / 2);
+        height: calc(100% / 6);
+        text-align: center;
+    }
+
+    .nav-block a {
+        width: 100%;
+        height: 100%;
+    }
+
+    #aside {
+        margin: 0px;
+    }
+
+    #footer {
+        height: 100px;
+    }
+
+    .pie p {
+        font-size: 1.37rem;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    ::::::::::               :::::::::
+  :::        :::            :::       :::
+ :::                      :::           :::
+ :::                      :::           :::
+ :::                     :::            :::
+ :::       :::::::::     :::           :::
+ :::          :::        :::          :::
+ :::       ::: 
+   :::::::::
+
+*/
+
+
+
+
+
+/*
+    ::::::::::               :::::::::
+  :::        :::            :::       :::
+ :::                      :::           :::
+ :::                      :::           :::
+ :::                     :::            :::
+ :::       :::::::::     :::           :::
+ :::         :::         :::          :::
+  :::      :::            :::       :::
+    :::::::::                :::::::
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*emojitierra.com*/
+/*https://www.miaulaonline.net/course/view.php?id=4507#section-3*/
